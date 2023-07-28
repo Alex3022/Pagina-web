@@ -6,17 +6,55 @@ body {
     font-family: "Helvetica", sans-serif;
   }
 
-  /* Cambiar los colores de fondo */
-body {
-    background-color:   #f0f0f0;  /* Cambiar el fondo del cuerpo  */
+ 
+  form {
+    display: flex;
+    flex-direction: column;
+    background:#f0f0f0 ;
+    text-align:center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px; 
   }
-  
-  header {
-    background-color: #007bff; /* para cambiar el color de encabezado   */
-    color: #f0f0f0;
-    padding: 20px;
-  }
+  form .title{
+    color: black;
+    font-size: 35px
+    margin-bottom medium 30px;
 
+
+  }
+  form label {
+    margin-bottom: 35px;
+  }
+  form label .fa-solid{
+    font-size: 20px;
+    color: #007bff;
+    margin-right: 10px;
+
+  }
+  form label input {
+    outline: none;
+    border: none;
+    color: #000;
+    border-bottom: solid 1px #007bff;
+    padding: 0 5px;
+    font-size: 18px;
+  }
+  form label input::placeholder{
+    color: #000( 37,37,37,0.5);
+
+  }
+  form .link{
+    color: #000;
+    margin-bottom: 15px;
+
+  }
+  form button {
+    color: #f0f0f0;
+    border: none;
+    background: linear-gradient(to right, #007bff);
+    font-size: 20px;
+
+  }
   nav {
     background-color: #f0f0f0;  /*  para Cambiar la barra de navegacion   */
   }
