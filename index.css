@@ -1,0 +1,27 @@
+/* Cambiar el estilo de letra */
+body {
+    font-family: "Arial", sans-serif;
+  }
+  h1 {
+    font-family: "Helvetica", sans-serif;
+  }
+
+  /* Cambiar los colores de fondo */
+body {
+    background-color:   #f0f0f0;  /* Cambiar el fondo del cuerpo  */
+  }
+  
+  header {
+    background-color: #007bff; /* para cambiar el color de encabezado   */
+    color: #f0f0f0;
+    padding: 20px;
+  }
+
+  nav {
+    background-color: #f0f0f0;  /*  para Cambiar la barra de navegacion   */
+  }
+
+  /* Agregar imágenes con margen */
+img {
+    margin: 10px;
+  }
