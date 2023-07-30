@@ -1,31 +1,53 @@
-// Funcionalidad 1: Cambiar el color de fondo del cuerpo (body)
-function cambiarColorFondo() {
-    const body = document.querySelector('body');
-    body.style.backgroundColor = '#f2e5e5';
+
+
+//const username = document.getElementById('username')
+//const password = document.getElementById  ('password')
+//const message = document.getElementById('message')
+//const button = document.getElementById('button')
+
+// index.js
+function login() {
+  const username = document.querySelector('#login-form input[type="text"]').value;
+  const password = document.querySelector('#login-form input[type="password"]').value;
+
+  //  El proceso de login  )
+  if (username === 'usuario' && password === 'contraseña') {
+    window.open('inicio.html', '_self');
+  } else {
+    alert('Su usuario o contraseña son incorrectos');
   }
-  
-  // Funcionalidad 2: Cambiar el tamaño de la fuente del título principal (h1)
-  function cambiarTamanoFuente() {
-    const tituloPrincipal = document.querySelector('h1');
-    tituloPrincipal.style.fontSize = '36px';
+}
+
+//function register() {
+  //const username = document.querySelector('#register-form input[type="text"]').value;
+ // const password = document.querySelector('#register-form input[type="password"]').value;
+
+  // Realizar la acción de registro 
+ // console.log('Usuario registrado:', username, 'con contraseña:', password);
+//}
+
+//document.getElementById('show-register').addEventListener('click', function () {
+//  document.getElementById('login-form').style.display = 'none';
+ // document.getElementById('register-form').style.display = 'block';
+//});
+
+//document.getElementById('register-button').addEventListener('click', register);
+
+
+
+// Asociar los eventos a los botones o elementos deseados
+
+// botonCambiarColor.addEventListener('click', cambiarColorFondo);
+// botonCambiarTamanoFuente.addEventListener('click', cambiarTamanoFuente);
+// botonAgregarImagen.addEventListener('click', agregarNuevaImagen);
+
+function cambiarColorFondo () {
+  body = document.getElementsByTagName('body')[0];
+  if( body.style.backgroundColor == 'blue'){
+    body.style.backgroundColor = 'white';
+  }else {
+    body.style.backgroundColor = 'blue';
   }
+}
+
   
-  // Funcionalidad 3: Agregar una nueva imagen con margen en la sección de inicio (main)
-  function agregarNuevaImagen() {
-    const mainSection = document.querySelector('main');
-    const nuevaImagen = document.createElement('img');
-    nuevaImagen.src = 'imagenes/imagen4.jpg.jpg"';
-    nuevaImagen.alt = '';
-    nuevaImagen.style.margin = '10px';
-    mainSection.appendChild(nuevaImagen);
-  }
-  
-  // Asociar los eventos a los botones o elementos deseados
-  
-  const botonCambiarColor = document.getElementById('boton-cambiar-color');
-  const botonCambiarTamanoFuente = document.getElementById('boton-cambiar-tamano');
-  const botonAgregarImagen = document.getElementById('boton-agregar-imagen');
-  
-  botonCambiarColor.addEventListener('click', cambiarColorFondo);
-  botonCambiarTamanoFuente.addEventListener('click', cambiarTamanoFuente);
-  botonAgregarImagen.addEventListener('click', agregarNuevaImagen);
