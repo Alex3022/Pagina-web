@@ -78,3 +78,60 @@ body {
 img {
     margin: 8px;
   }
+
+  .pad-group--category-banner.jsx-1250940326 {
+    margin-bottom: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.header-static-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 50px;
+}
+
+.uxc-huincha-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  margin: 0 auto;
+  background-color: #00607ee3;
+}
+
+#slider-faceta {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: unset;
+}
+
+.uxc-huincha-item {
+  margin-left: 12px;
+}
+
+.uxc-huincha-item, .uxc-huincha-col6.uxc-huincha-square .uxc-huincha-item, .uxc-huincha-container .uxc-huincha-circle-liquidacion, .uxc-huincha-container .uxc-huincha-circle-ventafinal {
+    width: 33.3%;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.uxc-huincha-item {
+  text-align: center;
+  position: relative;
+  padding: 0 12px;
+}
+
+.img-big div.uxc-huincha-fondo-circle {
+  background-color: #f0f0f0 !important;
+}
+
+.uxc-huincha-circle-fondo .uxc-huincha-fondo-circle {
+  display: block;
+}
