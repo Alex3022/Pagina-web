@@ -38,17 +38,16 @@ function cambiarColorFondo() {
 }
 
 
-
+//Funcion para mostrar todos los articulos
 function mostrarBusos() {
-  console.log("mostrarBusos")
   document.getElementById("divBusos").setAttribute('style', 'display:flex');
   document.getElementById("divGorra").setAttribute('style', 'display:none')
   document.getElementById("divPantalon").setAttribute('style', 'display:none')
   document.getElementById("divZapato").setAttribute('style', 'display:none')
 }
 
+//funcion para mostrar un articulo
 function mostrarGorras() {
-  console.log("mostrarGorras")
   document.getElementById("divGorra").setAttribute('style', 'display:flex')
   document.getElementById("divPantalon").setAttribute('style', 'display:none')
   document.getElementById("divZapato").setAttribute('style', 'display:none')
@@ -57,7 +56,6 @@ function mostrarGorras() {
 }
 
 function mostrarPantalon() {
-  console.log("mostrarPantalon")
   document.getElementById("divPantalon").setAttribute('style', 'display:flex')
   document.getElementById("divGorra").setAttribute('style', 'display:none')
   document.getElementById("divZapato").setAttribute('style', 'display:none')
@@ -65,7 +63,6 @@ function mostrarPantalon() {
 }
 
 function mostrarZapato() {
-  console.log("mostrarZapato")
   document.getElementById("divZapato").setAttribute('style', 'display:flex')
   document.getElementById("divPantalon").setAttribute('style', 'display:none')
   document.getElementById("divGorra").setAttribute('style', 'display:none')
@@ -73,7 +70,6 @@ function mostrarZapato() {
 }
 
 function mostrarTodos() {
-  console.log("mostrarTodos")
   document.getElementById("divBusos").setAttribute('style', 'display:flex');
   document.getElementById("divGorra").setAttribute('style', 'display:flex');
   document.getElementById("divPantalon").setAttribute('style', 'display:flex');
@@ -81,7 +77,6 @@ function mostrarTodos() {
 }
 
 window.onload = function ocultarTodos() {
-  console.log("ocultarTodos")
   document.getElementById("divBusos").setAttribute('style', 'display:none');
   document.getElementById("divGorra").setAttribute('style', 'display:none');
   document.getElementById("divPantalon").setAttribute('style', 'display:none');
