@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
+<!-- Menu -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio de sesión y registro</title>
 
-  <link rel="stylesheet" href="index.css">
-  <script type="text/javascript" src="./index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" rel="stylesheet">
+  <title> Tienda deportiva</title>
+
 </head>
 
 <body>
+  <div class=barra>
+    <h2>Menu<img src="imagenes/menu.png" width="40" alt="Logo"></h2>
+
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Articulos</a></li>
+      <li><a href="#">Carrito</a></li>
+      <li><a href="#">Seguimiento de la compra</a></li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
+
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio de sesión y registro</title>
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
 
   <h1>Iniciar Sesión</h1>
 
@@ -24,6 +53,10 @@
       <label>
         <i class="fa-solid fa-lock"></i>
         <input placeholder="password" type="password">
+
+
+
+
 
         <button onclick="login()">login</button>
 
@@ -42,307 +75,33 @@
           <button id="register-button">Registrar</button>
         </div>
 
+
+
+
         <p>No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
         <a href="#" class="link">Forgot your password?</a>
 
-  </div>
-
-  <div class="banner container">
-    <a href="#divBusos" onclick="mostrarTodos()">
-      <h3>Ver todos los productos</h3>
-    </a>
-    <div class="header-content">
-      <div class="color-container">
-        <div id="slider" class="slider">
-
-          <div>
-            <a href="#divBusos" onclick="mostrarBusos()">
-              <img id="img" src="imagenes/banner/buso_1.png" />
-              <h3 id="titulos">Busos</h3>
-            </a>
-          </div>
-
-          <div>
-            <a href="#divGorra" onclick="mostrarGorras()">
-              <img id="img" src="imagenes/banner/gorra_1.png" />
-              <h3 id="titulos">Gorras</h3>
-            </a>
-          </div>
-
-          <div>
-            <a href="#divPantalon" onclick="mostrarPantalon()">
-              <img id="img" src="imagenes/banner/pantalon_1.png" />
-              <h3 id="titulos">Pantalones</h3>
-            </a>
-          </div>
-
-          <div>
-            <a href="#divZapato" onclick="mostrarZapato()">
-              <img id="img" src="imagenes/banner/zapato_1.png" />
-              <h3 id="titulos">Zapatos</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <pre></pre>
-  <pre></pre>
-
-  <div id="divBusos" class="color-container secundario" style="display: none;">
-
-
-    <div>
-      <img id="img" src="imagenes/busos/buso_1.png"></img>
-      <h4>Pilatos</h4>
-      <p>Buso en lana color gris</p>
-      <h3>$95.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/busos/buso_2.png"></img>
-      <h4>Diesel</h4>
-      <p>Buso cerrado para hombre</p>
-      <h3>$105.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/busos/buso_3.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Buso cerrado para mujer</p>
-      <h3>$75.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/busos/buso_4.png"></img>
-      <h4>Superdry</h4>
-      <p>Chaqueta en lana para hacer deporte unisex</p>
-      <h3>$87.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/busos/buso_5.png"></img>
-      <h4>Monastery</h4>
-      <p>Buso para hombre</p>
-      <h3>$60.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
 
   </div>
 
-  <pre></pre>
-  <pre></pre>
 
-  <div id="divGorra" class="color-container secundario" style="display: none;">
+  </header>
 
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_1.png"></img>
-      <h4>Monastery</h4>
-      <p>Gorra para hombre</p>
-      <h3>$30.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
+  <main>
 
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_2.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_3.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_4.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra vintage unisex</p>
-      <h3>$53.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_5.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_6.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra vintage unisex</p>
-      <h3>$50.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_7.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra tipo beisbol unisex</p>
-      <h3>$34.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/gorras/gorra_8.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$38.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-  </div>
-
-  <pre></pre>
-  <pre></pre>
-
-  <div id="divPantalon" class="color-container secundario" style="display: none;">
+    <section id="servicios">
+      <h2>Tienda De Articulos Deportivos</h2>
+      <!-- Imágenes con margen -->
+      <img src="imagenes/imagen 2.jpg.jpg" alt="">
 
 
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_1.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Vinotinto</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_2.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Fucsia</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_3.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Rojo</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_4.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Azul</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_5.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Sudadera Mujer - Color Negro</p>
-      <h3>$30.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_6.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Pantalon tipo pescador Mujer - Color violeta claro</p>
-      <h3>$32.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_8.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Short Mujer - Color gris oscuro</p>
-      <h3>$45.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_9.png"></img>
-      <h4>Superdry</h4>
-      <p>Sudadera Mujer tipo pescador - Color negro</p>
-      <h3>$50.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/pantalon/pantalon_10.png"></img>
-      <h4>Superdry</h4>
-      <p>Pantalón Mujer - Color negro</p>
-      <h3>$60.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-
-  </div>
-
-  <pre></pre>
-  <pre></pre>
-
-  <div id="divZapato" class="color-container secundario" style="display: none;">
-
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_1.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Unisex - Talla 37 - 45</p>
-      <h3>$540.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_2.png"></img>
-      <h4>Diesel</h4>
-      <p>Zapatillas Hombre - Talla 37 - 45</p>
-      <h3>$620.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_3.png"></img>
-      <h4>Vans</h4>
-      <p>Zapatillas Hombre - Talla 37 - 43</p>
-      <h3>$220.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_4.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Unisex - Talla 37 - 45</p>
-      <h3>$320.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_5.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Mujer - Talla 37 - 40</p>
-      <h3>$250.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-  </div>
-
+  </main>
   <script src="index.js"></script>
 
   <button onclick="cambiarColorFondo()">Cambiar color del fondo</button>
   <footer>
     <p>&copy; 2023 Mi Empresa. Todos los derechos reservados.</p>
   </footer>
-
-
 </body>
 
 </html>
