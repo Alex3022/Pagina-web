@@ -11,17 +11,17 @@
   z-index: 1;
 }
 
-.barra ul{
+.barra ul {
   padding: 0px;
   text-align: center;
 
 }
 
-.barra li{
+.barra li {
   transition: .3s all;
 }
 
-.barra a{
+.barra a {
   text-decoration: none;
   list-style: none;
 
@@ -30,57 +30,70 @@
   padding: 0px;
 }
 
-.barra h2{
+.barra h2 {
   text-align: center;
-  color:white;
+  color: white;
   padding: 7px;
   padding-bottom: 7px;
 
   font-size: 0px;
 }
 
-.barra img{
+.barra img {
   padding-top: 30px;
   padding-left: 10px;
 }
 
-.barra:hover{
-  width:70%;
-  height:100%;
-
-  background-color:rgba(5, 33, 51, 0.98);
+.barra:hover {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(5, 33, 51, 0.98);
 }
 
-.barra:hover h2{
-  padding:15px;
+.barra:hover h2 {
+  padding: 15px;
   font-size: 35px;
 }
 
-.barra:hover a{
+.barra:hover a {
   font-size: 20px;
-  color:white;
+  color: white;
 
-  display:block;
-  padding:20px;
+  display: block;
+  padding: 20px;
 }
 
-.barra:hover img{
-  height:0px;
+.barra:hover img {
+  height: 0px;
 }
 
-.barra:hover li{
+.barra:hover li {
   border-top: 1px solid black;
-  width:100%;
+  width: 100%;
 }
 
-.barra:hover ul:last-of-type{
+.barra:hover ul:last-of-type {
   border-bottom: 1px solid black;
 }
 
-.barra:hover a:hover{
+.barra:hover a:hover {
   font-size: 25px;
-  padding:30px 0px;/*30 0 30 0*/
+  padding: 30px 0px;
+  /*30 0 30 0*/
   background-color: rgba(22, 78, 112, 0.98);
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 380px;
+  background-color: rgba(22, 78, 112, 0.98);
+  font-size: 25px;
+}
+
+li:hover ul {
+  display: block;
 }
 
 /* Cambiar el estilo de letra */
@@ -96,6 +109,7 @@ body {
 h1 {
   font-family: "Helvetica", sans-serif;
   text-align: center;
+  
 }
 
 .container {
@@ -189,4 +203,15 @@ img {
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   white-space: unset;
+}
+
+.btnAspecto {
+  transition: background-color .3s;
+  color: var(--home-linkbox-text-color);
+  padding: .5rem 1rem;
+  border: var(--home-linkbox-border);
+  background-color: var(--home-linkbox-bg);
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
 }
