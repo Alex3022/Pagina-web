@@ -3,6 +3,7 @@
     const list = document.querySelector('.menu__links');
     const menu = document.querySelector('.menu__hamburguer');
 
+    
     const addClick = ()=>{
         listElements.forEach(element =>{
             element.addEventListener('click', ()=>{
