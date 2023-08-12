@@ -24,6 +24,7 @@
         });
     }
 
+    
     const deleteStyleHeight = ()=>{
         listElements.forEach(element=>{
 
