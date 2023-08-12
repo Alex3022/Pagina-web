@@ -53,3 +53,54 @@
 
 })();
 
+
+function login() {
+    const username = document.querySelector('#login-form input[type="text"]').value;
+    const password = document.querySelector('#login-form input[type="password"]').value;
+  
+ 
+    if (username === 'usuario' && password === 'contraseña') {
+      window.open('perfil.html', '_self');
+    } else {
+      alert('Su usuario o contraseña son incorrectos');
+    }
+  }
+  
+  function abrirModal() {
+    var modal = document.getElementById('myModal'); 
+    modal.style.display = 'inline-block';                                                                                                                        
+  }
+  
+  
+  var modal = document.getElementById("myModal");
+  
+  
+  var onclick = document.getElementById("perfil");
+  
+
+  var span = document.getElementsByClassName("close")[0];
+  
+  
+  
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+ 
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  function cambiarColorFondo () {
+    body = document.getElementsByTagName('body')[0];
+    if( body.style.backgroundColor == 'orange'){
+      body.style.backgroundColor = 'white';
+    }else {
+      body.style.backgroundColor = 'orange';
+    }
+  }  
+  
+
