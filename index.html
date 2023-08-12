@@ -3,100 +3,61 @@
 
 <!-- Menu -->
 
-  <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Dropdown</title>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <tittle>Tienda</tittle>
+  <link rel="stylesheet" href="index.css">
+</head>
 <body>
-
-  <nav class="nav">
-
-    <div class="nav__container">
-
-      <h1 class="nav__title">Tienda deportiva</h1>
-
-      <a href="#menu" class="nav__menu">
-        <img src="./imagenes/menuu.svg" class="nav__icon">
-      </a>
-
-      <a href="#" class="nav__menu nav__menu--second">
-        <img src="./imagenes/close.svg" class="nav__icon ">
-      </a>
-
-      <ul class="dropdown" id="menu">
-
-        <li class="dropdown__list">
-          <a href="#" class="dropdown__link">
-            <img src="./imagenes/house.svg" class="dropdown__icon">
-            <span class="dropdown__span">Inicio</span>
-          </a>
+  <nav class="menu">
+    <section class="menu__container">
+      <h1 class="menu__logo">Tienda Deportiva</h1>
+      <ul class="menu__links">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Inicio</a>
         </li>
-
-        <li class="dropdown__list">
-          <a href="#" class="dropdown__link">
-            <img src="./imagenes/perfill.svg" class="dropdown__icon">
-            <span class="dropdown__span">Perfil</span>
-          </a>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Perfil</a>
         </li>
-
-        <li class="dropdown__list">
-          <a href="#" class="dropdown__link">
-            <img src="./imagenes/articuloss.svg" class="dropdown__icon">
-            <span class="dropdown__span">Articulos</span>
-            <img src="./imagenes/down.svg" class="dropdown__arrow">
-
-            <input type="checkbox" class="dropdown__check">
-          </a>
-
-          <div class="dropdown__content">
-
-            <ul class="dropdown__sub">
-
-              <li class="dropdown__li">
-                <a href="#" class="dropdown__anchor">Tenis</a>
-              </li>
-              <li class="dropdown__li">
-                <a href="#" class="dropdown__anchor">Chaquetas</a>
-              </li>
-              <li class="dropdown__li">
-                <a href="#" class="dropdown__anchor">Sudaderas</a>
-              </li>
-              <li class="dropdown__li">
-                <a href="#" class="dropdown__anchor">Gorras</a>
-              </li>
-
-            </ul>
-
-          </div>
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Articulos <img src="imagenes/arroww.svg" class="menu__arrow"> </a>
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Articulo 1</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Articulo 2</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Articulo 3</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Articulo 4</a>
+            </li>
+          </ul>
         </li>
-
-        <li class="dropdown__list">
-          <a href="#" class="dropdown__link">
-            <img src="./imagenes/comprass.svg" class="dropdown__icon">
-            <span class="dropdown__span">Compras</span>
-          </a>
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Compras <img src="imagenes/arroww.svg" class="menu__arrow"> </a>
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Carrito de compras</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Estado de compra</a>
+            </li>
+          </ul>
         </li>
-
-        <li class="dropdown__list">
-          <a href="#" class="dropdown__link">
-            <img src="./imagenes/seguimientoo.svg" class="dropdown__icon">
-            <span class="dropdown__span">Seguimiento</span>
-          </a>
-        </li>
-
       </ul>
-
+      <div class="menu__hamburguer">
+        <img src="imagenes/menuu.svg" class="menu__img">
     </div>
-
+    </section>
   </nav>
-
-
+  <script src="index.js"></script>
 </body>
+
 <!-- Inicio de sesion -->
 <html>
 
