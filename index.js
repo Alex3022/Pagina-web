@@ -1,81 +1,55 @@
-//const username = document.getElementById('username')
-//const password = document.getElementById  ('password')
-//const message = document.getElementById('message')
-//const button = document.getElementById('button')
+(function(){
+    const listElements = document.querySelectorAll('.menu__item--show');
+    const list = document.querySelector('.menu__links');
+    const menu = document.querySelector('.menu__hamburguer');
+
+    const addClick = ()=>{
+        listElements.forEach(element =>{
+            element.addEventListener('click', ()=>{
+
+                
+                let subMenu = element.children[1];
+                let height = 0;
+                element.classList.toggle('menu__item--active');
 
 
-function login() {
-  const username = document.querySelector('#login-form input[type="text"]').value;
-  const password = document.querySelector('#login-form input[type="password"]').value;
+                if(subMenu.clientHeight === 0){
+                    height = subMenu.scrollHeight;
+                }
 
-  //  El proceso de login  )
-  if (username === 'usuario' && password === 'contraseña') {
-    window.open('inicio.html', '_self');
-  } else {
-    alert('Su usuario o contraseña son incorrectos');
-  }
-}
+                subMenu.style.height = `${height}px`;
 
-//function register() {
-//const username = document.querySelector('#register-form input[type="text"]').value;
-// const password = document.querySelector('#register-form input[type="password"]').value;
+            });
+        });
+    }
 
-// Realizar la acción de registro 
-// console.log('Usuario registrado:', username, 'con contraseña:', password);
-//}
+    const deleteStyleHeight = ()=>{
+        listElements.forEach(element=>{
 
+            if(element.children[1].getAttribute('style')){
+                element.children[1].removeAttribute('style');
+                element.classList.remove('menu__item--active');
+            }
 
-//Funcion para mostrar todos los articulos
-function mostrarTodos() {
-  document.getElementById("divBusos").setAttribute('style', 'display:flex');
-  document.getElementById("divGorra").setAttribute('style', 'display:flex');
-  document.getElementById("divPantalon").setAttribute('style', 'display:flex');
-  document.getElementById("divZapato").setAttribute('style', 'display:flex');
-}
+        });
+    }
 
-//Funcion para ocultar los articulos, se usa al dar click en cada articulo oculte el anterior
-function ocultarArticulos() {
-  document.getElementById("divBusos").setAttribute('style', 'display:none');
-  document.getElementById("divGorra").setAttribute('style', 'display:none');
-  document.getElementById("divPantalon").setAttribute('style', 'display:none');
-  document.getElementById("divZapato").setAttribute('style', 'display:none');
-}
+    window.addEventListener('resize', ()=>{
+        if(window.innerWidth > 800){
+            deleteStyleHeight();
+            if(list.classList.contains('menu__links--show'))
+                list.classList.remove('menu__links--show');
 
+        }else{
+            addClick();
+        }
+    });
 
-//funcion que oculta todos los articulos al ingresar a la página
-window.onload = function ocultarTodos() {
-  document.getElementById("divBusos").setAttribute('style', 'display:none');
-  document.getElementById("divGorra").setAttribute('style', 'display:none');
-  document.getElementById("divPantalon").setAttribute('style', 'display:none');
-  document.getElementById("divZapato").setAttribute('style', 'display:none');
-}
+    if(window.innerWidth <= 800){
+        addClick();
+    }
 
-function mostrarArticulo(nombreId) {
-  ocultarArticulos()
-  document.getElementById(nombreId).setAttribute('style', 'display:flex')
-}
+    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
 
+})();
 
-
-function cambiarColorFondo2() {
-  body = document.getElementsByTagName('body')[0];
-  if (body.style.backgroundColor == 'black') {
-    console.log("Negro")
-    body.style.backgroundColor = 'white';
-    document.getElementsByTagName('h1')[0].setAttribute('style', 'color: black !important')
-  } else {
-    body.style.backgroundColor = 'black';
-    document.getElementsByTagName('h1')[0].setAttribute('style', 'color: white !important')
-  }
-}
-
-
-
-function cambiarColorFondo() {
-  body = document.getElementsByTagName('body')[0];
-  if (body.style.backgroundColor == 'orange') {
-    body.style.backgroundColor = 'white';
-  } else {
-    body.style.backgroundColor = 'orange';
-  }
-}
