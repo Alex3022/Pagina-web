@@ -9,38 +9,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body style="background-color: white !important;">
   <div id="myModal" class="modal">
-    <div class="modal-contente " >
-    <span class ="close">&times;</span>
-    <div class="container" id="login-form">
-      <nav id="nav">
-          <label> 
-              <i class="fa-solid fa-user"></i>
-              <input id="username" placeholder="username" type="text">
-  
-          </label>
-          <label> 
-              <i class="fa-solid fa-lock"></i>
-              <input placeholder="password" type="password"> 
-  
-              <button onclick="login()">login</button>
-            </div>
-          </div>
-        </div> 
-      </nav>
-         
-  <nav id="menu" class="menu">
-    <button id="btnClaro" type="button" class="btnAspecto" onclick="fondoOscuro()"
-    title="Modo Claro">
-      <input id="imgSol" type="image" src="imagenes/sol.png"/> 
-     </button>
+    <div class="modal-contente ">
+      <span class="close">&times;</span>
+      <div class="container" id="login-form">
+        <nav id="nav">
+          <label>
+            <i class="fa-solid fa-user"></i>
+            <input id="username" placeholder="username" type="text">
 
-     <button id="btnOscuro" type="button" class="btnAspecto" onclick="fondoClaro()" 
-     title="Modo Oscuro">
-      <input id="imgLuna" type="image" src="imagenes/luna.png"/>     
-     </button>
-  
+          </label>
+          <label>
+            <i class="fa-solid fa-lock"></i>
+            <input placeholder="password" type="password">
+
+            <button onclick="login()">login</button>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <nav id="menu" class="menu">
+    <button id="btnClaro" type="button" class="btnAspecto" onclick="fondoOscuro()" title="Modo Claro">
+      <input id="imgSol" type="image" src="imagenes/sol.png" />
+    </button>
+
+    <button id="btnOscuro" type="button" class="btnAspecto" onclick="fondoClaro()" title="Modo Oscuro">
+      <input id="imgLuna" type="image" src="imagenes/luna.png" />
+    </button>
+
     <section class="menu__container">
       <h1 class="menu__logo">¡¡¡Bienvenid@ a Nuestra Tienda Deportiva!!!</h1>
       <ul class="menu__links">
@@ -48,19 +47,22 @@
           <a href="#" class="menu__link">Inicio</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link"onclick="abrirModal()">Perfil</a>
+          <a href="#" class="menu__link" onclick="abrirModal()">Perfil</a>
         </li>
         <li class="menu__item menu__item--show">
-          <a href="#" class="menu__link" onclick="todos()">Articulos <img src="imagenes/arroww.svg" class="menu__arrow"> </a>
+          <a href="#" class="menu__link" onclick="todos()">Articulos <img src="imagenes/arroww.svg" class="menu__arrow">
+          </a>
           <ul class="menu__nesting">
             <li class="menu__inside">
               <a href="#" class="menu__link menu__link--inside" onclick="mostrarArticulo('divDeporte')">Deportivos</a>
             </li>
             <li class="menu__inside">
-              <a href="#" class="menu__link menu__link--inside" onclick="mostrarArticulo('divMujer')">Vestuario Mujer</a>
+              <a href="#" class="menu__link menu__link--inside" onclick="mostrarArticulo('divMujer')">Vestuario
+                Mujer</a>
             </li>
             <li class="menu__inside">
-              <a href="#" class="menu__link menu__link--inside" onclick="mostrarArticulo('divHombre')">Vestuario Hombre</a>
+              <a href="#" class="menu__link menu__link--inside" onclick="mostrarArticulo('divHombre')">Vestuario
+                Hombre</a>
             </li>
             <li class="menu__inside">
               <a href="#" class="menu__link menu__link--inside" onclick="mostrarArticulo('divZapato')">Calzado</a>
@@ -78,8 +80,8 @@
       </ul>
       <div class="menu__hamburguer">
         <img src="imagenes/menuu.svg" class="menu__img">
-        
-    </div>
+
+      </div>
     </section>
   </nav>
 
@@ -124,572 +126,54 @@
   <pre></pre>
 
   <div id="divDeporte" class="color-container secundario" style="display: none;">
-
-
-    <div>
-      <img id="img" src="imagenes/deporte/bagminton_1.png"></img>
-      <h4>Raqueta y Volante</h4>
-      <p>Deporte Bádminton</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
+    <div id="divPrDeporte">
+      <img id="imgDeporte"></img>
+      <h4 id="titulo"></h4>
+      <p id="desc"></p>
+      <h3 id="valor"></h3>
+      <button id="carrito" type="button" style="display: none;"></button>
     </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/pin_pon_1.png"></img>
-      <h4>Set Raquetas y Seis (6) Pelotas</h4>
-      <p>Deporte Pin Pon</p>
-      <h3>$165.750</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/pin_pon_2.png"></img>
-      <h4>Set Raquetas y Seis (6) Pelotas</h4>
-      <p>Deporte Pin Pon</p>
-      <h3>$165.750</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/pin_pon_3.png"></img>
-      <h4>Set Dos (2) Raquetas y Seis (2) Pelotas</h4>
-      <p>Deporte Pin Pon</p>
-      <h3>$90.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/tenis_1.png"></img>
-      <h4>Set Dos (2) Raquetas y Una (1) Pelota</h4>
-      <p>Vendido por Vittoria One Shop Sas</p>
-      <h3>$85.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/balon_1.png"></img>
-      <h4>Balón Baloncesto</h4>
-      <p>Jordan Playground 2.0 8P</p>
-      <h3>$130.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/balon_2.png"></img>
-      <h4>Balón Futbol</h4>
-      <p>Nike</p>
-      <h3>$90.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/balon_3.png"></img>
-      <h4>Pelota Beisbol</h4>
-      <p>Decathlon</p>
-      <h3>$20.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/bate_1.png"></img>
-      <h4>Bate Beisbol</h4>
-      <p>Decathlon</p>
-      <h3>$30.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/boxeo_1.png"></img>
-      <h4>Guantes Boxeo</h4>
-      <p>Decathlon</p>
-      <h3>$72.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/boxeo_3.png"></img>
-      <h4>Guantes Boxeo</h4>
-      <p>Decathlon</p>
-      <h3>$72.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/esgrima_1.png"></img>
-      <h4>Uniforme de Esgrima</h4>
-      <p>Decathlon</p>
-      <h3>$1.200.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/deporte/judo_1.png"></img>
-      <h4>Uniforme de Judo</h4>
-      <p>Decathlon</p>
-      <h3>$215.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
   </div>
 
   <pre></pre>
   <pre></pre>
 
   <div id="divHombre" class="color-container secundario" style="display: none;">
-
-    <!-- BUSOS -->
-    <div>
-      <img id="img" src="imagenes/hombre/busos/buso_1.png"></img>
-      <h4>Pilatos</h4>
-      <p>Buso en lana color gris</p>
-      <h3>$95.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
+    <div id="divPrHombre">
+      <img id="imgHombre"></img>
+      <h4 id="titulo"></h4>
+      <p id="desc"></p>
+      <h3 id="valor"></h3>
+      <button id="carrito" type="button" style="display: none;"></button>
     </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/busos/buso_2.png"></img>
-      <h4>Diesel</h4>
-      <p>Buso cerrado para hombre</p>
-      <h3>$105.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/busos/buso_3.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Buso cerrado para mujer</p>
-      <h3>$75.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/busos/buso_4.png"></img>
-      <h4>Superdry</h4>
-      <p>Chaqueta en lana para hacer deporte unisex</p>
-      <h3>$87.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/busos/buso_5.png"></img>
-      <h4>Monastery</h4>
-      <p>Buso para hombre</p>
-      <h3>$60.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-    <!-- CHAQUETAS -->
-    <div>
-      <img id="img" src="imagenes/hombre/chaquetas/chaqueta_1.png"></img>
-      <h4>Pilatos</h4>
-      <p>Chaqueta color blanco y azul</p>
-      <h3>$155.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/chaquetas/chaqueta_2.png"></img>
-      <h4>Diesel</h4>
-      <p>Chaleco acolchado color Hueso</p>
-      <h3>$235.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/chaquetas/chaqueta_3.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Saco con gorro color negro</p>
-      <h3>$70.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/chaquetas/chaqueta_4.png"></img>
-      <h4>Superdry</h4>
-      <p>Chaqueta impermeable color negro</p>
-      <h3>$87.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/chaquetas/chaqueta_5.png"></img>
-      <h4>Monastery</h4>
-      <p>Chaqueta impermeable color naranja</p>
-      <h3>$60.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/chaquetas/chaqueta_6.png"></img>
-      <h4>Pilatos</h4>
-      <p>Chaqueta color blanco y rojo</p>
-      <h3>$155.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-    <!-- GORRAS -->
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_1.png"></img>
-      <h4>Monastery</h4>
-      <p>Gorra para hombre</p>
-      <h3>$30.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_2.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_3.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_4.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra vintage unisex</p>
-      <h3>$53.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_5.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_6.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra vintage unisex</p>
-      <h3>$50.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_7.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra tipo beisbol unisex</p>
-      <h3>$34.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/gorras/gorra_8.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$38.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-    <!-- PANTALON -->
-    <div>
-      <img id="img" src="imagenes/hombre/pantaloneta/pantalon_1.png"></img>
-      <h4>KUAILEY</h4>
-      <p>Pantaloneta color azul oscuro</p>
-      <h3>$50.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/pantaloneta/pantalon_2.png"></img>
-      <h4>Amazon Essentials</h4>
-      <p>Pantaloneta color azul claro</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/pantaloneta/pantalon_3.png"></img>
-      <h4>GTHTTT</h4>
-      <p>Pantaloneta color blanco</p>
-      <h3>$38.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/pantaloneta/pantalon_4.png"></img>
-      <h4>Wrangler</h4>
-      <p>Pantaloneta color verde claro</p>
-      <h3>$53.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/pantaloneta/pantalon_5.png"></img>
-      <h4>Generic</h4>
-      <p>Pantaloneta color azul medio</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/hombre/pantaloneta/pantalon_6.png"></img>
-      <h4>GTHTTT</h4>
-      <p>Pantalon formal</p>
-      <h3>$120.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
   </div>
 
   <pre></pre>
   <pre></pre>
 
   <div id="divMujer" class="color-container secundario" style="display: none;">
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_1.png"></img>
-      <h4>Monastery</h4>
-      <p>Gorra para hombre</p>
-      <h3>$30.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
+    <div id="divPrMujer">
+      <img id="imgMujer"></img>
+      <h4 id="titulo"></h4>
+      <p id="desc"></p>
+      <h3 id="valor"></h3>
+      <button id="carrito" type="button" style="display: none;"></button>
     </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_2.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_3.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_4.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra vintage unisex</p>
-      <h3>$53.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_5.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$40.500</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_6.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra vintage unisex</p>
-      <h3>$50.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_7.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Gorra tipo beisbol unisex</p>
-      <h3>$34.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/gorras/gorra_8.png"></img>
-      <h4>Superdry</h4>
-      <p>Gorra unisex</p>
-      <h3>$38.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_1.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Vinotinto</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_2.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Fucsia</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_3.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Rojo</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_4.png"></img>
-      <h4>Superdry</h4>
-      <p>Sport Leggins Mujer - Color Azul</p>
-      <h3>$40.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_5.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Sudadera Mujer - Color Negro</p>
-      <h3>$30.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_6.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Pantalon tipo pescador Mujer - Color violeta claro</p>
-      <h3>$32.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_8.png"></img>
-      <h4>Marithe Francois Girbaud</h4>
-      <p>Short Mujer - Color gris oscuro</p>
-      <h3>$45.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_9.png"></img>
-      <h4>Superdry</h4>
-      <p>Sudadera Mujer tipo pescador - Color negro</p>
-      <h3>$50.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/mujer/pantalon/pantalon_10.png"></img>
-      <h4>Superdry</h4>
-      <p>Pantalón Mujer - Color negro</p>
-      <h3>$60.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-
   </div>
 
   <pre></pre>
   <pre></pre>
 
   <div id="divZapato" class="color-container secundario" style="display: none;">
-
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_1.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Unisex - Talla 37 - 45</p>
-      <h3>$540.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
+    <div id="divPrZapato">
+      <img id="imgZapato"></img>
+      <h4 id="titulo"></h4>
+      <p id="desc"></p>
+      <h3 id="valor"></h3>
+      <button id="carrito" type="button" style="display: none;"></button>
     </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_2.png"></img>
-      <h4>Diesel</h4>
-      <p>Zapatillas Hombre - Talla 37 - 45</p>
-      <h3>$620.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_3.png"></img>
-      <h4>Vans</h4>
-      <p>Zapatillas Hombre - Talla 37 - 43</p>
-      <h3>$220.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_4.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Unisex - Talla 37 - 45</p>
-      <h3>$320.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_5.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Mujer - Talla 37 - 40</p>
-      <h3>$250.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_6.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Hombre - Talla 37 - 43</p>
-      <h3>$280.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_7.png"></img>
-      <h4>Vans</h4>
-      <p>Zapatillas Hombre - Talla 37 - 43</p>
-      <h3>$350.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_8.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Hombre - Talla 37 - 43</p>
-      <h3>$190.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_9.png"></img>
-      <h4>Vans</h4>
-      <p>Zapatillas Hombre - Talla 37 - 40</p>
-      <h3>$145.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_10.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Hombre - Talla 37 - 42</p>
-      <h3>$90.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_11.png"></img>
-      <h4>Vans</h4>
-      <p>Zapatillas Hombre - Talla 37 - 45</p>
-      <h3>$255.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
-    <div>
-      <img id="img" src="imagenes/zapatos/zapato_12.png"></img>
-      <h4>Lacoste</h4>
-      <p>Zapatillas Hombre - Talla 37 - 40</p>
-      <h3>$210.000</h3>
-      <img id="img" src="imagenes/carro.png" style="width: 35px !important;"></img>
-    </div>
-
   </div>
 
- 
   <script src="index.js"></script>
 
   <footer id="footer">
