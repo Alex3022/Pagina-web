@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realizar Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmar Pago</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Titular</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="contraseña">
+                </div>
+            </div>        
+        </div>
+        <div class="second-row">
+            <div class="Número de tarjeta">
+                <h3>Número de Tarjeta</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>       
+        </div>
+        <div class="third-row">
+            <h3>Mes y Año</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Ene">Ene</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Abr">Abr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Ago">Ago</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dic">Dic</option>
+                    </select>
+                    <select name="years" id="years">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <img src="imagenes/mastercard.png" alt="">
+                    <img src="imagenes/paypal.png" alt="">
+                    <img src="imagenes/visa.png" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="./index.html">Finalizar Compra</a>
+    </div>
+</body>
+</html>
